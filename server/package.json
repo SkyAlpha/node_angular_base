@@ -1,0 +1,9 @@
+{
+  "name": "Bot",
+  "version": "1.0.0",
+  "description": "Aplicação que gerencia um bot.",
+  "dependencies": {
+    "express": "latest",
+    "body-parser": "latest"
+  }
+}
