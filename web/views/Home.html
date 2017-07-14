@@ -2,13 +2,16 @@
 
   <h1>People</h1>
   <div ng-repeat="p in people" class="col-3 box-content">
-    <div class="box">
-      <p>
-        Name: {{p.name}}, <small>Id: {{p.id}}</small>
-      </p>
-      <p>
-        Info: {{p.disclosableInfo}}
-      </p>
+    <div class="box card">
+        <div class="box-title">
+            {{p.name}}
+            <div class="FRight">
+                Id: {{p.id}}
+            </div>
+        </div>
+        <div class="box-body">
+            {{p.disclosableInfo}}
+        </div>
     </div>
   </div>
 </div>
