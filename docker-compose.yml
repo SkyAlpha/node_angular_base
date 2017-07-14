@@ -3,7 +3,7 @@ node:
   volumes:
     - ./:/usr/src/app
   expose:
-    - "3000"
+    - "8090"
   ports:
-    - "3000:3000"
+    - "8090:8090"
   working_dir: /usr/src/app
