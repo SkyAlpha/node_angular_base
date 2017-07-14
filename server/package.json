@@ -4,6 +4,12 @@
   "description": "Aplicação que gerencia um bot.",
   "dependencies": {
     "express": "latest",
-    "body-parser": "latest"
+    "body-parser": "latest",
+    "express-minify": "latest",
+    "uglify-js": "latest"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0"
   }
 }

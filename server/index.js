@@ -4,13 +4,16 @@ var bodyParser = require('body-parser');
 var path = require("path");
 var fs = require("fs");
 var http = require("http");
+var minify = require('express-minify');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + '/../web')); //set basepath to the web app.
+var rootApp = __dirname + '/../web';
+
+app.use(express.static(rootApp)); //set basepath to the web app.
 
 app.get('/', function (req, res) {
   res.redirect("/"); //Angular handles the calls from here.
@@ -39,6 +42,8 @@ app.get("/rest/people", function(req, res){
 
   res.send(list); //Send the list of people.
 });
+
+app.use(minify());
 
 
 app.listen(8090); //listen on port 8090
