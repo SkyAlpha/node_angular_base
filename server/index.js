@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 // Route that returns @return = [person].
 app.get("/rest/people", function(req, res){
 
-  var name = [ "Adam", "Abe", "Maria", "Rose", "Mario", "Luigi"]; //Dummy list of names
+  var name = [ "Adam", "Abel", "Mario", "Joseph", "Mario", "Luigi"]; //Dummy list of names
   var surname = [ "Lincoln", "Franklin", "Jackson", "Miyazaki", "M'bebe"]; //Dummy list of surnames
 
   var list = []; //Creates the list of people.

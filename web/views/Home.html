@@ -1,15 +1,20 @@
 <div class="container">
 
-  <h1>People</h1>
   <div ng-repeat="p in people" class="col-3 box-content">
     <div class="box card">
-        <div class="box-title">
-            {{p.name}}
-            <div class="FRight">
-                Id: {{p.id}}
-            </div>
+        <div class="box-img col-12">
+            <img class="avatar img-center" src="https://randomuser.me/api/portraits/men/{{p.id}}.jpg" width="100%" alt="">
         </div>
         <div class="box-body">
+            <div class="FLeft">
+                <h3 class="col-12">
+                    {{p.name}}
+                    <br>
+                    <small>
+                        Id: {{p.id}}
+                    </small>
+                </h3>
+            </div>
             {{p.disclosableInfo}}
         </div>
     </div>
